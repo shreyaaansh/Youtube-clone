@@ -28,7 +28,7 @@ function Header() {
                 <VideoCall className="header__icon"/>
                 <Apps className="header__icon"/>
                 <Notifications className="header__icon"/>
-                <Avatar img=""/>
+                <Avatar img="image.jpeg"/>
             </div>
             
         </div>
