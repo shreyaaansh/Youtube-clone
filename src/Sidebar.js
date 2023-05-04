@@ -10,10 +10,10 @@ import { OndemandVideo } from "@mui/icons-material";
 import { WatchLater } from "@mui/icons-material";
 import { ThumbUpAltOutlined } from "@mui/icons-material";
 import { ExpandMoreOutlined } from "@mui/icons-material";
-
-function Sidebar(){
+import { Stack } from "@mui/material";
+function Sidebar({comp}){
     return(
-
+    <Stack direction="row">
         <div className="sidebar">
 
         <SidebarRow selected Icon={Home} title ="Home" />
@@ -32,6 +32,8 @@ function Sidebar(){
         
         
         </div>
+        {comp}
+        </Stack>
     )
 }
 
