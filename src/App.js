@@ -3,24 +3,26 @@ import './App.css';
 import Header from './Header';
 import Sidebar from './Sidebar'
 import RecommendedVideos from './RecommendedVideos';
+import SearchPage from "./SearchPage"
 
-import { BrowserRouter ,Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="app">
-    <Header/>
-    <BrowserRouter>
-   
-      <Routes>
-      <Route path ="/" element={<Sidebar comp={<RecommendedVideos/>}/>} />
-   
-      
+      <Header/>
 
-        
+      <Routes>
+        <Route path ="/" element={<Sidebar comp={<RecommendedVideos/>}/>} />
+        <Route path ="/search/:inputSearch" element={<Sidebar comp={<SearchPage />}/>} />
       </Routes>
-    </BrowserRouter>
+
+
+      <Routes>
+      
+      </Routes>
+    
 
     
   </div>
